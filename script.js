@@ -27,6 +27,11 @@ const calculateTip = () => {
     let tipAmt = bill * rate;
     tipAmt = Math.ceil(tipAmt);
     tip.innerHTML = `Tip: $${tipAmt}`;
+
+    //Total amount
+
+    let totalBill = Number(bill) + tipAmt;
+    total.innerHTML = `Total Bill: $${totalBill}`
   }
 };
 
