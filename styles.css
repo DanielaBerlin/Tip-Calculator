@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 p {
@@ -35,7 +35,23 @@ img {
 
 section {
   height: 100vh;
-  background-color: rgb(250,181,197);
+  background-color: rgb(70, 24, 161);
+  background-image: radial-gradient(
+      circle at 100% 50%,
+      transparent 1rem,
+      rgb(179, 226, 216) 1rem,
+      rgb(179, 226, 216) 1.5rem,
+      transparent 1.5rem
+    ),
+    radial-gradient(
+      circle at 0% 50%,
+      transparent 1rem,
+      rgb(179, 226, 216) 1rem,
+      rgb(179, 226, 216) 1.5rem,
+      transparent 1.5rem
+    );
+  background-size: 20rem 5rem;
+  background-position: 0 0, 0 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,25 +59,25 @@ section {
 
 .calc {
   width: 40rem;
-  background-color: rgb(179,226,216);
+  background-color: rgb(179, 226, 216);
 }
 
 h2 {
   font-size: 4rem;
-  color: rgb(11, 10, 10);
-  background-color: rgb(246,224,165);
+  color: rgb(70, 24, 161);
+  background-color: rgb(217, 167, 232);
   text-align: center;
   padding: 1rem;
 }
 
-form, 
+form,
 form > * {
   width: 90%;
   margin: 0 auto;
   text-align: center;
   padding: 1rem 0;
   font-size: 1.6rem;
-  border-bottom: 3px solid rgb(242,139,0);
+  border-bottom: 3px solid rgb(70, 24, 161);
 }
 
 form div {
@@ -80,8 +96,8 @@ select {
 
 .btn {
   margin: 5px 0;
-  background-color: rgb(246,224,165);
-  color: rgb(11, 10, 10);
+  background-color: rgb(217, 167, 232);
+  color: rgb(70, 24, 161);
   outline: none;
   border: none;
   border-radius: 3px;
@@ -90,7 +106,8 @@ select {
 }
 
 .btn:hover {
-  background-color: rgb(242,139,0);
+  background-color: rgb(70, 24, 161);
+  color: rgb(217, 167, 232);;
 }
 
 .error {
@@ -105,7 +122,7 @@ select {
 }
 
 .result > * {
-  background-color: rgb(250,181,197);
+  background-color: rgb(217, 167, 232);
   margin-bottom: 1rem;
   padding: 1rem;
   font-size: 1.8rem;
@@ -113,5 +130,5 @@ select {
 }
 
 .total {
-  color: rgb(98,56,180);
+  color: rgb(70, 24, 161);
 }
