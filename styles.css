@@ -50,7 +50,7 @@ section {
       rgb(179, 226, 216) 1.5rem,
       transparent 1.5rem
     );
-  background-size: 20rem 5rem;
+  background-size: 8rem 5rem;
   background-position: 0 0, 0 2.5rem;
   display: flex;
   justify-content: center;
